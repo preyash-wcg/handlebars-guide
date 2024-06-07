@@ -4,7 +4,7 @@ const port = 3000;
 
 const handlebars = require('express-handlebars');
 app.set('view engine', 'hbs');
-app.engine('hbs', handlebars({
+app.engine('hbs', handlebars.engine({
     layoutsDir: __dirname + '/views/layouts',
     extname: 'hbs',
     defaultLayout: 'planB',
